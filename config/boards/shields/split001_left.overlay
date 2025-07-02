@@ -37,51 +37,6 @@ kscan1: kscan1 {
             ;
 
 }
-        /*row-gpios
-            = <&gpio0 0 (GPIO_ACTIVE_LOW)>
-            , <&gpio0 1 (GPIO_ACTIVE_LOW)>
-            , <&gpio0 2 (GPIO_ACTIVE_LOW)>
-            , <&gpio0 3 (GPIO_ACTIVE_LOW)>
-            , <&gpio0 4 (GPIO_ACTIVE_LOW)>
-            , <&gpio0 5 (GPIO_ACTIVE_LOW)>
-            ;
-        col-gpios
-            = <&mcp_io 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 7  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 8  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            ;
-    };
-
-
-// MCP23x17
-kscan2: kscan2 {
-        compatible = "zmk,kscan-gpio-direct";
-        wakeup-source;
-        status = "okay";
-        input-gpios
-                // Rows (5)
-            = <&mcp_io 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-                // Columns (11)
-            , <&mcp_io 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&mcp_io 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            ;
-    };*/
 
 left_encoder: encoder_left {
         status = "okay";
