@@ -18,6 +18,10 @@
         };
     };*/
 
+&default_transform {
+    col-offset = <10>;
+};
+
 kscan1: kscan1 {
        compatible = "zmk,matrix-transform";
         status = "okay";
