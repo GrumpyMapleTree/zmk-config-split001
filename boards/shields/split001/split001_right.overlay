@@ -22,7 +22,7 @@
     col-offset = <10>;
 };
 
-kscan1: kscan1 {
+&kscan0 {
        compatible = "zmk,matrix-transform";
         status = "okay";
         wakeup-source;
