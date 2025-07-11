@@ -1,17 +1,5 @@
 #include "split001.dtsi" //Shared between halves
 
-kscan0: kscan_composite {
-        // matrix driver
-        matrix {
-            kscan = <&kscan1>;
-        };
-        // direct GPIO driver for dpad and RKJXT1F42001 buttons
-        /*direct_left {
-            kscan = <&kscan2>;
-            //row-offset = <6>;
-        };*/
-    };
-
 &kscan0 {
         status = "okay";
         wakeup-source;
