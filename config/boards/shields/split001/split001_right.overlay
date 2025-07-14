@@ -1,8 +1,5 @@
 #include "split001.dtsi" //Shared between halves
 
-/ {
-
-
 default_transform {
     col-offset = <10>;
 };
@@ -81,4 +78,4 @@ right_encoder: right_left {
         reset-gpios = <&gpio0 20 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
     };
 };
-}
+
