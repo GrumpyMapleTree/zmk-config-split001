@@ -1,6 +1,6 @@
 #include "split001.dtsi" //Shared between halves
 
-default_transform {
+&default_transform {
     col-offset = <10>;
 };
 
