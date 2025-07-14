@@ -1,21 +1,13 @@
 #include "split001.dtsi" //Shared between halves
 
 / {
-chosen {
-        zmk,kscan = &default_kscan;
-        zmk,matrix_transform = &default_transform;
-    };
 
-&default_transform {
+
+default_transform {
     col-offset = <10>;
 };
 
-default_kscan: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        label = "default_kscan";
-        diode-direction = "col2row";
-        status = "okay";
-        wakeup-source;
+&kscan0 {
         row-gpios
             =   <&mcp_io 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&mcp_io 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
