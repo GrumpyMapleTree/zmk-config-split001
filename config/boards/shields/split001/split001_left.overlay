@@ -1,11 +1,6 @@
 #include "split001.dtsi" //Shared between halves
 
 &kscan0 {
-        compatible = "zmk,kscan-gpio-matrix";
-        label = "default_kscan";
-        diode-direction = "col2row";
-        status = "okay";
-        wakeup-source;
         row-gpios
             =   <&mcp_io 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                 <&mcp_io 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -29,12 +24,11 @@
 
 &left_encoder {
         status = "okay";
-        a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-        b-gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        a-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
-    &pinctrl {
-
+&pinctrl {
     // I2C for MCP23017
     i2c0_default: i2c0_default {
         group1 {
@@ -74,7 +68,7 @@
         reg = <0x20>;
         #gpio-cells = <2>;
         ngpios = <16>;
-        int-gpios = <&gpio1 6 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        reset-gpios = <&gpio0 20 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        int-gpios = <&xiao_d 6 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        reset-gpios = <&xiao_d 20 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
     };
 };
